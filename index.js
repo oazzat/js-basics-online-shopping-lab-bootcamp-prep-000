@@ -52,6 +52,7 @@ function removeFromCart(item) {
     var array = cart.splice(i,1)
 
     }
+    cart = array
     return array
 
   }

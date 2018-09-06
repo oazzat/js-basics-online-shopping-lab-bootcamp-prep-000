@@ -23,6 +23,7 @@ function viewCart() {
   }
   else if (cart.length === 1){
     sentence = sentence + " " + cart[0].itemName + " at $" + cart[0].itemPrice + "."
+    return sentence
   }
   
   for(var i=0;i<cart.length; i++){

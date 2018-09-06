@@ -60,7 +60,12 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
+  var total = total()
+  for(var i=0; i<cart.length;i++){
+    cart.pop()
+  }
   
+  return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`
 }
 
 function placeOrder(){

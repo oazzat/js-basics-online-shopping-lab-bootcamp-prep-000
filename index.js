@@ -50,13 +50,12 @@ function removeFromCart(item) {
   for (var i=0; i<cart.length; i++){
     if(item === cart[i].itemName){
     var array = cart.splice(i,1)
-      return array
+
     }
-    else{
-      return "That item is not in your cart."
-    }
+    return array
 
   }
+  return "That item is not in your cart."
 }
 
 function placeOrder(cardNumber) {
